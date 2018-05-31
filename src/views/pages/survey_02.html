@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- include head.html -->
+  @@include('../layouts/head.html', {
+    "title": "winner page"
+  })
+  <!-- include styles.html -->
+  @@include('../layouts/styles.html')
+</head>
+<body>
+  <div class="wrapper">
+    <!-- include header.html -->
+    @@include('../layouts/header.html')
+    <section class="main-container">
+      <div id="survey-page" class="block-container">
+        <div class="container">
+          <div class="section-heading">
+            <div class="row">
+              <div class="col-sm-12">
+                <h2 class="heading-survey text-center pb40">
+                  <span class="hello">Hello Guest!</span>
+                  <span class="desc">YOU'RE ALMOST DONE NOW COMPLETE THIS QUICK SURVEY</span>
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div class="section-survey-content">
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <img  class="img-fluid" src="../images/ads.png" alt="ads01">
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <div class="spec-content specs-has-employment">
+                  <h3 class="heading">LIFE INSURANCE</h3>
+                  <img  class="img-fluid img-spec" src="../images/logo_spec.png" alt="logo_spec">
+                  <p class="content">
+                    There are some things we think about but never do. Turn your thoughts into action with Insuranceline’s Life Insurance cover PLUS receive a Bonus $100 gift card^ after your first 2 months’ cover. Click here to find out more.
+                  </p>
+                  <div class="align-items-center justify-content-center">
+                    <div class="styled-input-single col-md-12">
+                      <input type="radio" name="fieldset-1" id="radio-example-one" />
+                      <label for="radio-example-one">Yes, Please</label>
+                    </div>
+                    <div class="styled-input-single col-md-12">
+                      <input type="radio" name="fieldset-1" id="radio-example-two" />
+                      <label for="radio-example-two">No, Thanks</label>
+                    </div>
+                  </div>
+                  <p class="content-bottom pt25">
+                    Qualifying criteria apply. Insurance issued by TAL Life Limited. Please read the PDS.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </section>
+
+    <!-- include footer.html -->
+    @@include('../layouts/footer.html')
+  </div>
+
+  <!-- include scripts.html -->
+  @@include('../layouts/scripts.html')
+</body>
+</html>

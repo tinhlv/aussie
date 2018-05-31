@@ -1,0 +1,35 @@
+// ----------------------------------------------------------------------
+// Background layout
+// ----------------------------------------------------------------------
+.bg-gray {
+  background-color: #f2f2f2;
+}
+.bg-grey {
+  background: #272d31; /* Old browsers */
+  background: -moz-linear-gradient(top, #272d31 0%, #343b3f 89%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #272d31 0%,#343b3f 89%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #272d31 0%,#343b3f 89%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#272d31', endColorstr='#343b3f',GradientType=0 ); /* IE6-9 */
+}
+.bg-blue-dark {
+  background-color: #32383c;
+}
+// ----------------------------------------------------------------------
+// color
+// ----------------------------------------------------------------------
+$color-primary: #19c4ff !default;
+$color-blue: #0ab3ee !default;
+$color-red: #f34a86 !default;
+$color-text-default: #212121 !default;
+$color-blue-dark: #32383c !default;
+$color-border: #dedede !default;
+$color-black-dark: #1f2327 !default;
+$color-grey: #9a9a9a !default;
+// ----------------------------------------------------------------------
+// Font
+// ----------------------------------------------------------------------
+$font-heading-sb: 'Titillium-Semibold';
+$font-heading-b: 'Titillium-Bold';
+$font-heading-r: 'Titillium-Regular';
+$font-heading-l: 'Titillium-Light';
+$font-family: 'Roboto';

@@ -1,0 +1,133 @@
+#survey-page {
+  @include rem ('padding', 40, 0, 40, 0);
+  @include breakpoint (992) {
+    @include rem ('padding', 15, 0, 15, 0);
+  }
+}
+
+.heading-survey {
+  .hello {
+    @include rem ('font-size', 37);
+    line-height: 1.4;
+    font-family: $font-family;
+    color: #de1f31;
+    font-weight: 700;
+    text-shadow: -3px 1px 15px #ff000080;
+    display: block;
+    @include breakpoint (992) {
+      @include rem ('font-size', 27);
+    }
+  }
+  .desc {
+    @include rem ('font-size', 32);
+    text-transform: uppercase;
+    line-height: 1.4;
+    font-family: $font-heading-b;
+    color: $color-text-default;
+    display: block;
+    @include breakpoint (992) {
+      @include rem ('font-size', 22);
+    }
+  }
+}
+
+.spec-content {
+  .progressbar-percent {
+    text-align: center;
+    @include rem ('font-size', 24);
+    text-transform: uppercase;
+    line-height: 1.4;
+    font-family: $font-heading-b;
+    color: $color-blue;
+    @include rem ('padding-bottom', 10);
+  }
+  .progress {
+    @include rem ('height', 13);
+    background-color: $color-black-dark;
+    @include roundedCorners(30);
+    .progress-bar {
+      @include roundedCorners(10);
+      background-color: $color-blue;
+    }
+  }
+}
+
+.form-confirm {
+  .heading {
+    @include rem ('font-size', 28);
+    text-transform: uppercase;
+    line-height: 1.4;
+    font-family: $font-heading-b;
+    color: $color-text-default;
+  }
+  .desc {
+    @include rem ('font-size', 16);
+    line-height: 1.4;
+    font-family: $font-heading-sb;
+    color: $color-grey;
+    @include rem ('padding-bottom', 35);
+  }
+  .btn-group {
+    display: block;
+    .text {
+      @include rem ('font-size', 20);
+      line-height: 1.4;
+      font-family: $font-heading-sb;
+      color: #fff;
+      @include rem ('padding-left', 10);
+      @include breakpoint (769) {
+        @include rem ('font-size', 16);
+      }
+    }
+    .fas {
+      color: #fff;
+      @include rem ('font-size', 20);
+    }
+    .btn {
+      @include rem ('padding', 20, 0, 20, 0);
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+.specs-has-employment {
+  .heading {
+    @include rem ('font-size', 28);
+    line-height: 1.4;
+    font-family: $font-heading-b;
+    color: $color-text-default;
+  }
+  .content {
+    @include rem ('font-size', 16);
+    line-height: 1.4;
+    font-family: $font-heading-sb;
+    color:$color-grey;
+    @include rem ('padding', 30, 0, 30, 0);
+  }
+  .content-bottom {
+    @include rem ('font-size', 12);
+    line-height: 1.4;
+    font-family: $font-heading-sb;
+    color:$color-grey;
+  }
+  .styled-input-single {
+    padding: 6px 0 6px 40px;
+    label {
+      &::before {
+        @include rem ('width', 20);
+        @include rem ('height', 20);
+        margin: -10px 0 0;
+      }
+      &::after {
+        left: 4px;
+        width: 12px;
+        height: 12px;
+        margin: -6px 0 0; 
+      }
+    }
+  }
+  .img-spec {
+    @include rem ('padding', 45, 0, 45, 0);
+  }
+}

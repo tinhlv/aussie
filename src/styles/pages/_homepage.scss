@@ -1,0 +1,181 @@
+// ----------------------------------------------------------------------
+// Banner
+// ----------------------------------------------------------------------
+.bg-banner {
+  background-image: url('../images/banner.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include rem ('height', 456);
+  position: relative;
+  background-position: center;
+  @include breakpoint (992) {
+    padding: 15px 0px;
+    @include rem ('height', auto);
+  }
+  @include breakpoint (600) {
+    background-position: left center;
+    .description-banner,
+    .description-banner-small {
+      min-width: 100%;
+    }
+  }
+}
+
+.banner-container {
+  .description-banner {
+    position: absolute;
+    @include rem ('top', 100);
+    left: 0;
+    @include rem ('max-width', 532);
+    @include breakpoint (992) {
+      position: unset;
+      left: unset;
+      text-align: center;
+      max-width: 50%;
+    }
+    .heading {
+      @include rem ('font-size', 83);
+      line-height: 1.4;
+      font-family: $font-heading-sb;
+      color: #fff;
+      text-shadow: -1px 2px rgba(37, 37, 37, 0.3);
+      @include breakpoint (992) {
+        @include rem ('font-size', 53);
+      }
+    }
+    .content {
+      @include rem ('font-size', 30);
+      line-height: 1.4;
+      font-family: $font-heading-b;
+      color: #fff;
+      text-shadow: -1px 2px rgba(37, 37, 37, 0.3);
+      text-transform: uppercase;
+      @include rem ('padding-bottom', 23);
+      @include breakpoint (992) {
+        @include rem ('font-size', 20);
+        @include rem ('padding-bottom', 15);
+      }
+    }
+   .btn-view {
+     position: relative;
+     @include rem ('padding', 10, 23, 10, 23);
+    .icon-click {
+      background: url('../images/cursor-icon.png');
+      background-color: #fff;
+      background-repeat: no-repeat;
+      background-size: 16px;
+      background-position: center;
+      @include rem ('width', 42);
+      @include rem ('height', 42);
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    .text-btn {
+      @include rem ('padding-left', 46);
+    }
+   }
+  }
+  .description-banner-small {
+    position: absolute;
+    right: 0;
+    @include rem ('top', 260);
+    @include breakpoint (992) {
+      right: 0;
+      top: 0;
+      text-align: right;
+      max-width: 50%;
+      @include rem ('padding-top', 15);
+    }
+    @include breakpoint (768) {
+      max-width: 50%;
+      left: 0;
+      position: relative;
+      text-align: center;
+    }
+    .content {
+      @include rem ('padding-bottom', 23);
+      @include breakpoint (992) {
+        @include rem ('padding-bottom', 15);
+      }
+      .text {
+        @include rem ('font-size', 18);
+        line-height: 1.4;
+        font-family: $font-heading-b;
+        color: #fff;
+        text-shadow: -1px 2px rgba(37, 37, 37, 0.3);
+        @include breakpoint (992) {
+          @include rem ('font-size', 14);
+          @include rem ('padding-bottom', 15);
+        }
+      }
+      .regular {
+        font-family: $font-heading-r;
+      }
+      .number{
+        @include rem ('font-size', 31);
+        line-height: 1.4;
+        font-family: $font-heading-sb;
+        color: #fff;
+        text-shadow: -1px 2px rgba(37, 37, 37, 0.3);
+        @include breakpoint (992) {
+          @include rem ('font-size', 25);
+        }
+      }
+      sup {
+        @include rem ('font-size', 20);
+        @include breakpoint (992) {
+          @include rem ('font-size', 15);
+        }
+      }
+    }
+    @include breakpoint (768) { 
+      .btn-link {
+        float: none !important;
+      }
+    }
+  }
+}
+// ----------------------------------------------------------------------
+// Slogan
+// ----------------------------------------------------------------------
+.slogan-container {
+  .heading {
+    font-family: $font-heading-l;
+    @include rem ('font-size', 27);
+    line-height: 1.4;
+    color: $color-blue;
+  }
+  .text {
+    font-family: $font-heading-b;
+    @include rem ('font-size', 14);
+    line-height: 1.4;
+    color: $color-text-default;
+  }
+  .link {
+    color: $color-blue;
+  }
+  .medal {
+    background: url('../images/medal.png');
+    @include rem ('padding-left', 60);
+  }
+  .gift {
+    background: url('../images/gift.png');
+    @include rem ('padding-left', 80);
+  }
+  .item-slogan {
+    @include rem ('padding-top', 13);
+    @include rem ('padding-bottom', 13);
+    background-position: left center;
+    background-repeat: no-repeat;
+  }
+}
+// ----------------------------------------------------------------------
+// competition
+// ----------------------------------------------------------------------
+.competition-list-container {
+  @include rem ('padding', 20, 0, 40, 0);
+  @include breakpoint (769) {
+    @include rem ('padding', 15, 0, 15, 0);
+  }
+}

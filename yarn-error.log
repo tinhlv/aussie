@@ -1,0 +1,70 @@
+Arguments: 
+  D:\laragon\bin\nodejs\node-v8\node.exe D:\laragon\bin\yarn\bin\yarn.js add bootstrap@4.1.1
+
+PATH: 
+  C:\Users\DELL\AppData\Local\Yarn\config\global\node_modules\.bin;C:\Users\DELL\AppData\Roaming\npm;C:\Users\DELL\AppData\Roaming\Composer\vendor\bin;;D:\laragon\bin\laragon\utils;D:\laragon\bin\mysql\mysql-5.7.19-winx64\bin;D:\laragon\bin\php\php-7.1.12-Win32-VC14-x64;D:\laragon\bin\composer;D:\laragon\bin\apache\httpd-2.4.27-win64-VC14\bin;D:\laragon\bin\redis\redis-x64-3.2.100;D:\laragon\bin\nodejs\node-v8;D:\laragon\bin\yarn\bin;D:\laragon\bin\nginx\nginx-1.12.0;D:\laragon\bin\notepad++;D:\laragon\bin\telnet;D:\laragon\bin\ngrok;D:\laragon\bin\git\bin;D:\laragon\bin\git\cmd;D:\laragon\bin\git\usr\bin;D:\laragon\bin\git\mingw64\bin;D:\laragon\bin;D:\laragon\usr\bin;D:\laragon\bin\putty;D:\laragon\bin\cmder\bin;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Yarn\bin;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Bitvise SSH Client;C:\Program Files\nodejs\;C:\WINDOWS\System32\OpenSSH\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\Microsoft VS Code\bin;C:\Users\Administrator\AppData\Roaming\npm;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\share\vim\vim74;D:\laragon\bin\cmder\;
+
+Yarn version: 
+  1.0.2
+
+Node version: 
+  8.9.1
+
+Platform: 
+  win32 x64
+
+npm manifest: 
+  {
+    "name": "html-boilerplate",
+    "version": "1.0.0",
+    "description": "HTML Boilerplate",
+    "main": "index.js",
+    "scripts": {
+      "build": "./node_modules/.bin/gulp build",
+      "dev": "./node_modules/.bin/gulp run:dev",
+      "prod": "./node_modules/.bin/gulp run:prod"
+    },
+    "keywords": [
+      "HTML",
+      "CSS",
+      "Boilerplate",
+      "HTML Boilerplate Generator",
+      "HTML Boilerplate",
+      "HTML Generator"
+    ],
+    "author": "ninhva <anninh.59@gmail.com>",
+    "license": "MIT",
+    "devDependencies": {
+      "del": "^2.2.2",
+      "eslint": "^3.16.1",
+      "gulp": "^3.9.1",
+      "gulp-clean-css": "^2.4.0",
+      "gulp-connect": "^5.0.0",
+      "gulp-file-include": "^1.1.0",
+      "gulp-html-prettify": "0.0.1",
+      "gulp-htmlhint": "^0.3.1",
+      "gulp-if": "^2.0.2",
+      "gulp-imagemin": "^3.1.1",
+      "gulp-jsbeautifier": "^2.0.4",
+      "gulp-rev": "^7.1.2",
+      "gulp-rev-replace": "^0.4.3",
+      "gulp-sass": "^3.1.0",
+      "gulp-uglify": "^2.1.2",
+      "gulp-useref": "^3.1.2",
+      "gulp-watch": "^4.3.11",
+      "run-sequence": "^1.2.2"
+    },
+    "dependencies": {
+      "bootstrap": "^3.3.7",
+      "jquery": "^3.1.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'D:\aussie\node_modules\align-text\node_modules\kind-of'

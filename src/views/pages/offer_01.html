@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- include head.html -->
+  @@include('../layouts/head.html', {
+    "title": "winner page"
+  })
+  <!-- include styles.html -->
+  @@include('../layouts/styles.html')
+</head>
+<body>
+  <div class="wrapper">
+    <!-- include header.html -->
+    @@include('../layouts/header.html')
+    <section class="main-container">
+      <div id="offer-page" class="block-container">
+        <div class="container">
+          <div class="section-heading text-center">
+            <div class="row">
+              <div class="col-sm-12">
+                <h2 class="heading-offer">
+                  It’s your last chance to win a
+                  <span class="price">$500 COLES</span>
+                  shopping voucher
+                </h2>
+              </div>
+            </div>
+          </div>
+          
+          <div class="section-offer-content">
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <img  class="img-fluid" src="../images/ads.png" alt="ads01">
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <div class="heading-offer-login border-bottom pb15 mb25">
+                  <h3 class="heading">
+                    Register to win!
+                  </h3>
+                  <div class="button-facebook">
+                    <p>or sign in with facebook?</p>
+                    <a class="btn btn-social btn-facebook">
+                      <i class="fab fa-facebook-f"></i>
+                      <span class="text">Connect with Facebook</span>
+                    </a>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="form-offer-content">
+                  <form class="form-horizontal" action=" " method="" id="contact_form">
+                    <fieldset>
+                      <div class="row align-items-center justify-content-center">
+                        <div class="styled-input-single col-md-2 col-sm-2">
+                          <input type="radio" name="fieldset-1" id="radio-example-one" />
+                          <label for="radio-example-one">Mr</label>
+                        </div>
+                        <div class="styled-input-single col-md-2 col-sm-2">
+                          <input type="radio" name="fieldset-1" id="radio-example-two" />
+                          <label for="radio-example-two">Ms</label>
+                        </div>
+                      </div>
+                      <!-- Text input-->
+                      <div class="form-group">
+                        <div class="input-group">
+                          <span class="input-group-addon"><i class="fas fa-user"></i></span>
+                          <input name="first_name" placeholder="First name" class="form-control" type="text">
+                        </div>
+                      </div>
+                      <!-- Text input-->
+                      <div class="form-group">
+                        <div class="input-group">
+                          <span class="input-group-addon"><i class="fas fa-user-plus"></i></span>
+                          <input name="last_name" placeholder="Last name" class="form-control" type="text">
+                        </div>
+                      </div>
+                      <!-- Text input-->
+                      <div class="form-group">
+                        <div class="input-group">
+                          <span class="input-group-addon"><i class="fas fa-envelope"></i></span>
+                          <input name="email" placeholder="john.smith@example.com" class="form-control" type="text">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-4 form-group">
+                          <div class="input-group">
+                            <span class="input-group-addon"><i class="far fa-calendar-alt"></i></span>
+                            <input name="email" placeholder="DD" class="form-control" type="text">
+                          </div>
+                        </div>
+                        <div class="col-md-4 form-group">
+                          <div class="input-group">
+                            <span class="input-group-addon"><i class="far fa-calendar-alt"></i></span>
+                            <input name="email" placeholder="MM" class="form-control" type="text">
+                          </div>
+                        </div>
+                        <div class="col-md-4 form-group">
+                          <div class="input-group">
+                            <span class="input-group-addon"><i class="far fa-calendar-alt"></i></span>
+                            <input name="email" placeholder="YY" class="form-control" type="text">
+                          </div>
+                        </div>
+                      </div>
+                      <p class="policy-content text-center pb30">
+                        I agree with the <a class="ref-link" href="">terms and conditions</a> and <a class="ref-link" href="">privacy policy</a> and consent to being contacted by competition's host, its clients and(or) <a class="ref-link" href="">sponsors</a>.
+                      </p>
+                      <div class="form-group">
+                        <button type="submit" class="btn btn-send">accepts T&C’s & Confirm</button>
+                      </div>
+                    </fieldset>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </section>
+
+    <!-- include footer.html -->
+    @@include('../layouts/footer.html')
+  </div>
+
+  <!-- include scripts.html -->
+  @@include('../layouts/scripts.html')
+</body>
+</html>

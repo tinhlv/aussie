@@ -1,0 +1,82 @@
+.box-shadow { 
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); 
+}
+.border-bottom {
+  border-bottom: 1px solid $color-border;
+}
+.card {
+  .card-text {
+    line-height: 1.4;
+    font-family: $font-heading-sb;
+    color: $color-text-default;
+    @include rem ('font-size', 22);
+  }
+  .card-img-top {
+    height: 226px;
+    display: block;
+    width: 100%;
+    border: 5px solid white;
+  }
+  .card-body {
+    position: relative;
+    .tag-item {
+      position: absolute;
+      top: -34px;
+      left: 0;
+      text-align: center;
+      @include rem ('padding', 5, 35, 5, 35);
+      .fa-star {
+        @include rem ('font-size', 14);
+      }
+      .text {
+        @include rem ('padding-left', 15);
+      }
+    }
+    .tag-blue {
+      background-color: $color-blue;
+      color: #fff;
+    }
+    .tag-red {
+      background-color: $color-red;
+      color: #fff;
+    }
+  }
+  .body-style-detail {
+    @include rem ('padding', 40, 25, 40, 25);
+    @include breakpoint (600) {
+      @include rem ('padding', 15, 20, 15, 20);
+    }
+    .item {
+      @include rem ('padding', 5, 0, 5, 0);
+      .label {
+        line-height: 1.4;
+        font-family: $font-heading-sb;
+        color: $color-blue;
+        @include rem ('font-size', 21);
+      }
+      .info {
+        line-height: 1.4;
+        font-family: $font-heading-sb;
+        color: $color-text-default;
+        @include rem ('font-size', 20);
+      }
+    }
+  }
+}
+// ----------------------------------------------------------------------
+// Heading
+// ----------------------------------------------------------------------
+.heading-category {
+  line-height: 1.4;
+  font-family: $font-heading-l;
+  color: $color-text-default;
+}
+
+.heading-30 {
+  @include rem ('font-size', 30);
+  @include rem ('padding', 20, 0, 40, 0);
+  @include breakpoint (767) {
+    @include rem ('font-size', 22);
+    @include rem ('padding', 15, 0, 15, 0);
+  }
+}

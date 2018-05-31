@@ -1,0 +1,51 @@
+.footer-bottom {
+   background-color: $color-blue-dark;
+   @include rem('padding', 35, 0, 35, 0);
+  .footer-content {
+    @include rem('font-size', 12);
+    font-family: $font-family;
+    line-height: 1.4;
+    p {
+      @include rem('padding-bottom', 25);
+      color: #fff;
+    }
+  }
+}
+.footer-top {
+  background-color: $color-blue-dark;
+  @include rem('padding-top', 40);
+  .menu-footer {
+    text-align: center;
+    display: inline-block;
+    .nav-item {
+      border-right: 1px solid $color-blue;
+      display: inline;
+      .nav-link {
+        display: inline;
+        font-family: $font-family;
+        @include rem('font-size', 18);
+        line-height: 1.4;
+        color: $color-blue;
+      }
+      &:last-child {
+        border: none;
+      }
+    }
+  }
+}
+
+.design {
+  @include rem('padding', 25, 0, 40, 0);
+  a, .line{
+    color: $color-blue;
+    @include rem('padding', 0, 5, 0, 5);
+  }
+}
+
+.copyright {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: $font-family;
+  @include rem('font-size', 12);
+  line-height: 1.4;
+}

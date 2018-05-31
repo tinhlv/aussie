@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- include head.html -->
+  @@include('../layouts/head.html', {
+    "title": "winner page"
+  })
+  <!-- include styles.html -->
+  @@include('../layouts/styles.html')
+</head>
+<body>
+  <div class="wrapper">
+    <!-- include header.html -->
+    @@include('../layouts/header.html')
+    <section class="main-container">
+      <div id="survey-page" class="block-container">
+        <div class="container">
+          <div class="section-heading">
+            <div class="row">
+              <div class="col-sm-12">
+                <h2 class="heading-survey text-center pb40">
+                  <span class="hello">Hello Guest!</span>
+                  <span class="desc">YOU'RE ALMOST DONE NOW COMPLETE THIS QUICK SURVEY</span>
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div class="section-survey-content">
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <img  class="img-fluid" src="../images/ads.png" alt="ads01">
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <div class="spec-content specs-has-employment">
+                  <h3 class="heading">LIFE INSURANCE</h3>
+                  <img  class="img-fluid img-spec" src="../images/Employment.png" alt="logo_spec">
+                  <p class="content">
+                    What is your current employment status?
+                  </p>
+                  <div class="align-items-center justify-content-center">
+                    <div class="styled-input-container styled-input--square">
+                      <div class="styled-input-single col-md-6">
+                        <input type="checkbox" name="fieldset-1" id="radio1-example-one" />
+                        <label class="text-small" for="radio1-example-one">Full-time employed</label>
+                      </div>
+                      <div class="styled-input-single col-md-6">
+                        <input type="checkbox" name="fieldset-2" id="radio2-example-two" />
+                        <label class="text-small" for="radio2-example-two">Self-employed</label>
+                      </div>
+                      <div class="styled-input-single col-md-6">
+                        <input type="checkbox" name="fieldset-3" id="radio3-example-three" />
+                        <label class="text-small" for="radio3-example-three">Part-time employed</label>
+                      </div>
+                      <div class="styled-input-single col-md-6">
+                        <input type="checkbox" name="fieldset-4" id="radio4-example-four" />
+                        <label class="text-small" for="radio4-example-four">N/A</label>
+                      </div>
+                      <div class="styled-input-single col-md-6">
+                        <input type="checkbox" name="fieldset-5" id="radio5-example-five" />
+                        <label class="text-small" for="radio5-example-five">Casual employed</label>
+                      </div>
+                      <div class="styled-input-single col-md-6">
+                        <input type="checkbox" name="fieldset-6" id="radio6-example-six" />
+                        <label class="text-small" for="radio6-example-six">Unemployed looking for work</label>
+                      </div>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-next mt40">next</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </section>
+
+    <!-- include footer.html -->
+    @@include('../layouts/footer.html')
+  </div>
+
+  <!-- include scripts.html -->
+  @@include('../layouts/scripts.html')
+</body>
+</html>

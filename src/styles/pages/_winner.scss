@@ -1,0 +1,25 @@
+#winner-page {
+  @include rem ('padding-bottom', 40);
+}
+.heading-winner-container {
+  @include rem ('padding-bottom', 40, 0, 40, 0);
+  .heading-winner {
+    line-height: 1.4;
+    font-family: $font-heading-l;
+    color: $color-text-default;
+    @include rem ('font-size', 46);
+    @include breakpoint (600) {
+      @include rem ('font-size', 30);
+    }
+  }
+  .content-winner {
+    line-height: 1.4;
+    font-family: $font-heading-b;
+    color: $color-text-default;
+    @include rem ('font-size', 30);
+    text-transform: uppercase;
+    @include breakpoint (600) {
+      @include rem ('font-size', 22);
+    }
+  }
+}
