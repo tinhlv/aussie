@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- include head.html -->
+  @@include('../layouts/head.html', {
+    "title": "winner page"
+  })
+  <!-- include styles.html -->
+  @@include('../layouts/styles.html')
+</head>
+<body>
+  <div class="wrapper">
+    <!-- include header.html -->
+    @@include('../layouts/header.html')
+    <section class="main-container">
+      <div id="offer-page" class="block-container">
+        <div class="container">
+          <div class="section-heading text-center">
+            <div class="row">
+              <div class="col-sm-12">
+                <h2 class="heading-offer">
+                  It’s your last chance to win a
+                  <span class="price">$500 COLES</span>
+                  shopping voucher
+                </h2>
+              </div>
+            </div>
+          </div>
+          
+          <div class="section-offer-content">
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <img  class="img-fluid" src="../images/ads.png" alt="ads01">
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <div class="heading-offer-login border-bottom pb15 mb25">
+                  <h3 class="heading">
+                    Register to win!
+                  </h3>
+                  <div class="button-facebook">
+                    <p>or sign in with facebook?</p>
+                    <a class="btn btn-social btn-facebook">
+                      <i class="fab fa-facebook-f"></i>
+                      <span class="text">Connect with Facebook</span>
+                    </a>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="form-offer-content">
+                  <form class="form-horizontal" action=" " method="" id="contact_form">
+                    <fieldset>
+                      <!-- Text input-->
+                      <div class="form-group">
+                        <div class="col-md-12">
+                          <div class="input-group">
+                            <span class="input-group-addon"><i class="fas fa-street-view"></i></span>
+                            <input name="stress_adress" placeholder="Stress Address" class="form-control" type="text">
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Text input-->
+                      <div class="form-group">
+                        <div class="col-md-12">
+                          <div class="input-group">
+                            <span class="input-group-addon"><i class="fas fa-map-marker-alt"></i></span>
+                            <input name="city" placeholder="Suburb/City" class="form-control" type="text">
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Text input-->
+                      <div class="form-group">
+                        <div class="col-md-12">
+                          <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                            <input name="post_code" placeholder="Postcode" class="form-control" type="text">
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Text input-->
+                      <div class="form-group">
+                        <div class="col-md-12">
+                          <div class="input-group">
+                            <span class="input-group-addon"><i class="fas fa-envelope"></i></span>
+                            <input name="state" placeholder="State" class="form-control" type="text">
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Text input-->
+                      <div class="form-group">
+                      <div class="col-md-12">
+                        <div class="input-group">
+                          <span class="input-group-addon"><i class="fas fa-phone-volume"></i></span>
+                          <input name="phone" placeholder="Mobile Number (10 digits)" class="form-control" type="text">
+                        </div>
+                      </div>
+                    </div>
+                      <!-- Text input-->
+                      <p class="policy-content text-center pb30">
+                        I agree with the <a class="ref-link" href="">terms and conditions</a> and <a class="ref-link" href="">privacy policy</a> and consent to being contacted by competition's host, its clients and(or) <a class="ref-link" href="">sponsors</a>.
+                      </p>
+                      <div class="form-group">
+                        <div class="col-md-12">
+                          <button type="submit" class="btn btn-send">accepts T&C’s & Confirm</button>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </section>
+
+    <!-- include footer.html -->
+    @@include('../layouts/footer.html')
+  </div>
+
+  <!-- include scripts.html -->
+  @@include('../layouts/scripts.html')
+</body>
+</html>

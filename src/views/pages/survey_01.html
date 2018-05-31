@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- include head.html -->
+  @@include('../layouts/head.html', {
+    "title": "winner page"
+  })
+  <!-- include styles.html -->
+  @@include('../layouts/styles.html')
+</head>
+<body>
+  <div class="wrapper">
+    <!-- include header.html -->
+    @@include('../layouts/header.html')
+    <section class="main-container">
+      <div id="survey-page" class="block-container">
+        <div class="container">
+          <div class="section-heading">
+            <div class="row">
+              <div class="col-sm-12">
+                <h2 class="heading-survey text-center">
+                  <span class="hello">Hello Guest!</span>
+                  <span class="desc">YOU'RE ALMOST DONE NOW COMPLETE THIS QUICK SURVEY</span>
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div class="section-survey-content">
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <img  class="img-fluid" src="../images/ads.png" alt="ads01">
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <div class="spec-content">
+                  <p class="progressbar-percent">50%</p>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 50%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="form-confirm">
+                    <h3 class="heading">DO YOU OWN A HOME?</h3>
+                    <p class="desc">Do you currently own a house or paying off a mortgage?</p>
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                      <div class="row">
+                        <div class="col-md-6 col-sm-6 col-6">
+                          <button type="button" class="btn btn-blue">
+                            <i class="fas fa-check"></i> <span class="text">Yes, Please</span>
+                          </button>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-6">
+                          <button type="button" class="btn btn-grey">
+                            <i class="fas fa-times"></i> <span class="text">No, Thanks</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </section>
+
+    <!-- include footer.html -->
+    @@include('../layouts/footer.html')
+  </div>
+
+  <!-- include scripts.html -->
+  @@include('../layouts/scripts.html')
+</body>
+</html>

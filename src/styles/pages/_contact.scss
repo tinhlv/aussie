@@ -1,0 +1,57 @@
+#contact-page {
+  @include rem ('padding', 40, 0, 40, 0);
+  @include breakpoint (769) {
+    @include rem ('padding', 15, 0, 15, 0);
+  }
+}
+.contact-container {
+  .heading {
+    line-height: 1.4;
+    font-family: $font-heading-l;
+    color: $color-text-default;
+    @include rem ('font-size', 46);
+  }
+  .message {
+    line-height: 1.8;
+    font-family: $font-heading-sb;
+    color: $color-text-default;
+    @include rem ('font-size', 20);
+    @include rem ('padding', 50, 0, 50, 0);
+    @include breakpoint (769) {
+      @include rem ('padding', 15, 0, 15, 0);
+    }
+  }
+  .bg-map-contact {
+    background: url(../images/bg_map.png);
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-position: -30px -30px;
+  }
+  .adress-container {
+    @include rem ('height', 148);
+    background-color: #fff;
+    @include rem ('margin-top', 80);
+    position: relative;
+     @include rem ('padding-top', 45);
+    @include breakpoint (769) {
+      @include rem ('padding-top', 15);
+      @include rem ('margin-top', 0);
+    }
+    .adress-content {
+      line-height: 1.4;
+      font-family: $font-heading-sb;
+      color: $color-text-default;
+      @include rem ('font-size', 20);
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+    }
+  }
+  .map-container {
+    @include rem ('padding-top', 45);
+    @include breakpoint (769) {
+      @include rem ('padding-top', 15);
+    }
+  }
+}

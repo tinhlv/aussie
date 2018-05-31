@@ -1,0 +1,50 @@
+.heading-offer {
+  @include rem ('font-size', 35);
+  line-height: 1.4;
+  font-family: $font-heading-b;
+  color: $color-text-default;
+  @include breakpoint (1200) {
+    @include rem ('font-size', 18);
+  }
+  .price {
+    @include rem ('font-size', 71);
+    line-height: 1.4;
+    font-family: $font-family;
+    color: #de1f31;
+    font-weight: 700;
+    text-shadow: -5px 2px 5px #ff000080;
+    @include rem ('font-size', 30);
+  }
+}
+
+.heading-offer-login {
+  .heading {
+    @include rem ('font-size', 20);
+    line-height: 1.4;
+    font-family: $font-heading-b;
+    color: $color-text-default;
+    justify-content: flex-start;
+    display: flex;
+  }
+}
+
+#offer-page {
+  .btn-send { 
+    display: block;
+    width: 100%;
+  }
+}
+
+.policy-content {
+  @include rem ('font-size', 12);
+  line-height: 1.8;
+  font-family: $font-family;
+  color: $color-text-default;
+  font-weight: 400;
+  .ref-link {
+    color: $color-blue;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

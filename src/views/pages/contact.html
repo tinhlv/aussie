@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- include head.html -->
+  @@include('../layouts/head.html', {
+    "title": "contact page"
+  })
+  <!-- include styles.html -->
+  @@include('../layouts/styles.html')
+</head>
+<body>
+  <div class="wrapper">
+    <!-- include header.html -->
+    @@include('../layouts/header.html')
+    <section class="main-container">
+      <div id="contact-page" class="block-container">
+        <div class="contact-container">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <div class="text-center">
+                  <h1 class="heading">Contact Us</h1>
+                  <p class="message">Please send us a message if you have any question,
+                      and we'll get back to you shortly.</p>
+                </div>
+                <div class="form-contact-container">
+                  <form class="form-horizontal" action=" " method="" id="contact_form">
+                    <fieldset>
+                      <!-- Form Name -->
+                      <!-- Text input-->
+                      <div class="form-group">
+                        <div class="col-md-12">
+                          <div class="input-group">
+                            <span class="input-group-addon"><i class="fas fa-user"></i></span>
+                            <input name="first_name" placeholder="Your name" class="form-control" type="text">
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Text input-->
+                      <div class="form-group">
+                        <div class="col-md-12">
+                          <div class="input-group">
+                            <span class="input-group-addon"><i class="fas fa-phone-volume"></i></span>
+                            <input name="phone" placeholder="Mobile Number (10 digits)" class="form-control" type="text">
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Text input-->
+                      <div class="form-group">
+                        <div class="col-md-12">
+                          <div class="input-group">
+                            <span class="input-group-addon"><i class="fas fa-envelope"></i></span>
+                            <input name="email" placeholder="john.smith@example.com" class="form-control" type="text">
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Text input-->
+                      <div class="form-group">
+                        <div class="col-md-12 inputGroupContainer">
+                          <div class="input-group">
+                            <textarea rows="5" cols="50" class="form-control" name="comment" placeholder="your message..."></textarea>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-md-12">
+                          <button type="submit" class="btn btn-send">send message</button>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </form>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <div class="adress-container bg-map-contact">
+                  <p class="adress-content text-center">
+                    Po Box 5016, Mermaid Waters <br/>
+                    Gold Coast, QLD 4218 AU
+                  </p>
+                </div>
+                <div class="map-container">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3736489.7218514383!2d90.21589792292741!3d23.857125486636733!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1506502314230" width="100%" height="315" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </section>
+
+    <!-- include footer.html -->
+    @@include('../layouts/footer.html')
+  </div>
+
+  <!-- include scripts.html -->
+  @@include('../layouts/scripts.html')
+</body>
+</html>
