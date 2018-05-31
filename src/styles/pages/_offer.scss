@@ -13,18 +13,30 @@
     color: #de1f31;
     font-weight: 700;
     text-shadow: -5px 2px 5px #ff000080;
-    @include rem ('font-size', 30);
+    @include breakpoint (1200) {
+      @include rem ('font-size', 30);
+    }
   }
 }
 
 .heading-offer-login {
+  @include breakpoint (500) {
+    text-align: center;
+    margin-bottom: 0 !important;
+  }
   .heading {
     @include rem ('font-size', 20);
     line-height: 1.4;
     font-family: $font-heading-b;
     color: $color-text-default;
-    justify-content: flex-start;
-    display: flex;
+    display: inline-block;
+    width: calc(100% - 211px);
+    @include breakpoint (500) {
+      min-width: 100%;
+    }
+  }
+  .button-facebook {
+    display: inline-block;
   }
 }
 
@@ -32,6 +44,9 @@
   .btn-send { 
     display: block;
     width: 100%;
+    @include breakpoint (500) {
+      padding: 15px;
+    }
   }
 }
 
@@ -41,6 +56,9 @@
   font-family: $font-family;
   color: $color-text-default;
   font-weight: 400;
+  @include breakpoint (768) {
+    padding-bottom: 15px !important;
+  }
   .ref-link {
     color: $color-blue;
     &:hover {

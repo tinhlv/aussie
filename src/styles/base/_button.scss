@@ -53,6 +53,10 @@
   background: $color-blue;
   @include roundedCorners(50);
   @include rem ('padding', 9, 37, 9, 37);
+  &:hover {
+    background-color: $color-primary;
+    color: #fff;
+  }
 }
 
 .btn-send {
