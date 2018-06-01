@@ -47,7 +47,7 @@
                   <div class="clearfix"></div>
                 </div>
                 <div class="form-offer-content">
-                  <form class="form-horizontal" action=" " method="" id="contact_form">
+                  <form class="form-horizontal" action="offer_02.html" method="" id="contact_form">
                     <fieldset>
                       <div class="row align-items-center justify-content-center">
                         <div class="styled-input-single col-md-2 col-sm-2">
@@ -104,7 +104,7 @@
                         I agree with the <a class="ref-link" href="">terms and conditions</a> and <a class="ref-link" href="">privacy policy</a> and consent to being contacted by competition's host, its clients and(or) <a class="ref-link" href="">sponsors</a>.
                       </p>
                       <div class="form-group">
-                        <button type="submit" class="btn btn-send">accepts T&C’s & Confirm</button>
+                        <button type="submit" class="btn btn-send">Continued</button>
                       </div>
                     </fieldset>
                   </form>
@@ -118,7 +118,9 @@
     </section>
 
     <!-- include footer.html -->
-    @@include('../layouts/footer.html')
+    @@include('../layouts/footer.html',{
+      "bgGrey": true
+    })
   </div>
 
   <!-- include scripts.html -->

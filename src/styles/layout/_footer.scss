@@ -1,5 +1,18 @@
+.footer-container {
+  &.bg-grey-light {
+    p {
+      color: $color-text-default !important;
+    }
+    .footer-top, .copyright {
+      display: none;
+    }
+    .footer-bottom {
+      @include rem('padding-top', 30);
+    }
+  }
+}
+
 .footer-bottom {
-   background-color: $color-blue-dark;
    @include rem('padding', 35, 0, 35, 0);
   .footer-content {
     @include rem('font-size', 12);
@@ -11,8 +24,8 @@
     }
   }
 }
+
 .footer-top {
-  background-color: $color-blue-dark;
   @include rem('padding-top', 40);
   .menu-footer {
     text-align: center;

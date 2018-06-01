@@ -25,13 +25,14 @@
     margin-bottom: 0 !important;
   }
   .heading {
-    @include rem ('font-size', 20);
+    @include rem ('font-size', 25);
     line-height: 1.4;
     font-family: $font-heading-b;
     color: $color-text-default;
     display: inline-block;
     @include rem ('padding-top', 20);
     @include breakpoint (500) {
+      @include rem ('font-size', 20);
       min-width: 100%;
     }
   }

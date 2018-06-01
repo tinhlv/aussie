@@ -32,7 +32,7 @@
               </div>
               <div class="col-sm-12 col-md-6">
                 <div class="spec-content">
-                  <p class="progressbar-percent">50%</p>
+                  <p class="progressbar-percent">20%</p>
                   <div class="progress">
                     <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 50%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
@@ -64,7 +64,9 @@
     </section>
 
     <!-- include footer.html -->
-    @@include('../layouts/footer.html')
+    @@include('../layouts/footer.html',{
+      "bgGrey": true
+    })
   </div>
 
   <!-- include scripts.html -->

@@ -17,30 +17,6 @@
     width: 100%;
     border: 5px solid white;
   }
-  .card-body {
-    position: relative;
-    .tag-item {
-      position: absolute;
-      top: -39px;
-      left: 5px;
-      text-align: center;
-      @include rem ('padding', 5, 35, 5, 35);
-      .fa-star {
-        @include rem ('font-size', 14);
-      }
-      .text {
-        @include rem ('padding-left', 15);
-      }
-    }
-    .tag-blue {
-      background-color: $color-blue;
-      color: #fff;
-    }
-    .tag-red {
-      background-color: $color-red;
-      color: #fff;
-    }
-  }
   .body-style-detail {
     @include rem ('padding', 40, 25, 40, 25);
     @include breakpoint (600) {
@@ -62,6 +38,30 @@
       }
     }
   }
+  .block-image-card {
+    position: relative;
+    .tag-item {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      text-align: center;
+      @include rem ('padding', 5, 10, 5, 10);
+      .icon-mark-as-favorite-star {
+        @include rem ('font-size', 14);
+      }
+      .text {
+        @include rem ('padding-left', 5);
+      }
+    }
+    .tag-blue {
+      background-color: $color-blue;
+      color: #fff;
+    }
+    .tag-red {
+      background-color: $color-red;
+      color: #fff;
+    }
+  }
 }
 // ----------------------------------------------------------------------
 // Heading
@@ -79,4 +79,14 @@
     @include rem ('font-size', 22);
     @include rem ('padding', 15, 0, 15, 0);
   }
+}
+
+/* Zoom In #1 */
+.card > img {
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+}
+.card:hover img {
+  opacity: 0.9;
+	background: #4a3753;
 }

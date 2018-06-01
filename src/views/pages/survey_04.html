@@ -32,7 +32,11 @@
               </div>
               <div class="col-sm-12 col-md-6">
                 <div class="spec-content specs-has-employment">
-                  <h3 class="heading">LIFE INSURANCE</h3>
+                  <p class="progressbar-percent">100%</p>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 50%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <h3 class="heading pt15">LIFE INSURANCE</h3>
                   <img  class="img-fluid img-spec" src="images/Employment.png" alt="logo_spec">
                   <p class="content">
                     What is your current employment status?
@@ -55,7 +59,9 @@
     </section>
 
     <!-- include footer.html -->
-    @@include('../layouts/footer.html')
+    @@include('../layouts/footer.html',{
+      "bgGrey": true
+    })
   </div>
 
   <!-- include scripts.html -->
