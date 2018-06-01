@@ -30,13 +30,18 @@
     font-family: $font-heading-b;
     color: $color-text-default;
     display: inline-block;
-    width: calc(100% - 211px);
+    @include rem ('padding-top', 20);
     @include breakpoint (500) {
       min-width: 100%;
     }
   }
   .button-facebook {
+    float: right;
     display: inline-block;
+    @include breakpoint (500) {
+      float: none;
+      min-width: 100%;
+    }
   }
 }
 

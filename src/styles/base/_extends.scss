@@ -21,8 +21,8 @@
     position: relative;
     .tag-item {
       position: absolute;
-      top: -34px;
-      left: 0;
+      top: -39px;
+      left: 5px;
       text-align: center;
       @include rem ('padding', 5, 35, 5, 35);
       .fa-star {

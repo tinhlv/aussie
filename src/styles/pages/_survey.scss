@@ -79,9 +79,9 @@
         @include rem ('font-size', 16);
       }
     }
-    .fas {
+    .icon-ans {
       color: #fff;
-      @include rem ('font-size', 20);
+      @include rem ('font-size', 13);
     }
     .btn {
       @include rem ('padding', 20, 0, 20, 0);

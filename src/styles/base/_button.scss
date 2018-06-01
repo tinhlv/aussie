@@ -26,13 +26,13 @@
 .btn-link {
   @include transition(all 0.30s ease-in-out);
   background: #fff;
-  @include rem ('padding', 3, 10, 3, 10);
+  @include rem ('padding', 3, 12, 3, 12);
   @include inline-block();
   text-align: center;
   @include roundedCorners(30);
   &:hover, &:focus {
     background: $color-primary;
-    .text-btn {
+    .text-btn, .icon-download{
       color: #fff;
     }
   }
@@ -115,7 +115,7 @@
   -webkit-box-shadow:0px 1px 1px rgba(255,255,255,0.8) inset, 1px 1px 3px rgba(0,0,0,0.2);
   -moz-box-shadow:0px 1px 1px rgba(255,255,255,0.8) inset, 1px 1px 3px rgba(0,0,0,0.2);
   box-shadow:0px 1px 1px rgba(255,255,255,0.8) inset, 1px 1px 3px rgba(0,0,0,0.2);
-  .text, .fa-facebook-f {
+  .text, .icon-facebook {
     color: #fff;
   }
 }
