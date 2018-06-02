@@ -92,6 +92,9 @@
 }
 
 .specs-has-employment {
+  @include breakpoint (768) {
+    text-align: center;
+  }
   .heading {
     @include rem ('font-size', 28);
     line-height: 1.4;
@@ -112,7 +115,13 @@
     color:$color-grey;
   }
   .styled-input-single {
-    padding: 6px 0 6px 40px;
+    @include rem ('padding', 6, 0, 6, 40);
+    @include breakpoint (900) {
+      @include rem ('padding', 6, 0, 6, 30);
+      .text-small {
+        @include rem ('font-size', 14);
+      }
+    }
     label {
       &::before {
         @include rem ('width', 20);
@@ -129,5 +138,8 @@
   }
   .img-spec {
     @include rem ('padding', 45, 0, 45, 0);
+    @include breakpoint (768) {
+      @include rem ('padding', 15, 0, 15, 0);
+    }
   }
 }
