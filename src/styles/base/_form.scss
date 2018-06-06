@@ -2,6 +2,9 @@
   position: relative;
   padding: 20px 0 20px 40px;
   text-align: left;
+  @include breakpoint (992) {
+    padding: 10px 0 10px 40px;
+  }
   label {
     @include rem ('font-size', 18);
     line-height: 1.4;
@@ -70,6 +73,10 @@
   }
   .form-control {
     border: 1px solid #dbdbdb;
+  }
+  @include breakpoint (992) {
+    @include rem ('padding-top', 10);
+    @include rem ('padding-bottom', 10);
   }
 }
 

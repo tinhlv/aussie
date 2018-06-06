@@ -1,6 +1,6 @@
 #contact-page {
   @include rem ('padding', 40, 0, 40, 0);
-  @include breakpoint (769) {
+  @include breakpoint (992) {
     @include rem ('padding', 15, 0, 15, 0);
   }
 }
@@ -17,7 +17,7 @@
     color: $color-text-default;
     @include rem ('font-size', 20);
     @include rem ('padding', 50, 0, 50, 0);
-    @include breakpoint (769) {
+    @include breakpoint (992) {
       @include rem ('padding', 15, 0, 15, 0);
     }
   }
@@ -33,7 +33,7 @@
     @include rem ('margin-top', 80);
     position: relative;
      @include rem ('padding-top', 45);
-    @include breakpoint (769) {
+    @include breakpoint (992) {
       @include rem ('padding-top', 15);
       @include rem ('margin-top', 0);
     }
@@ -53,5 +53,10 @@
     @include breakpoint (769) {
       @include rem ('padding-top', 15);
     }
+  }
+  .btn-send {
+    display: block;
+    width: 100%;
+    padding: 18px;
   }
 }

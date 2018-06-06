@@ -4,7 +4,10 @@
   font-family: $font-heading-b;
   color: $color-text-default;
   @include breakpoint (1200) {
-    @include rem ('font-size', 18);
+    @include rem ('font-size', 24);
+  }
+  @include breakpoint (576) {
+    @include rem ('font-size', 16);
   }
   .price {
     @include rem ('font-size', 71);
@@ -15,6 +18,9 @@
     text-shadow: -5px 2px 5px #ff000080;
     @include breakpoint (1200) {
       @include rem ('font-size', 30);
+    }
+    @include breakpoint (576) {
+      @include rem ('font-size', 25);
     }
   }
 }

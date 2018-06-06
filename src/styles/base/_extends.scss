@@ -12,7 +12,6 @@
     @include rem ('font-size', 22);
   }
   .card-img-top {
-    height: 226px;
     display: block;
     width: 100%;
     border: 5px solid white;
@@ -22,6 +21,9 @@
     @include breakpoint (600) {
       @include rem ('padding', 15, 20, 15, 20);
     }
+    @include breakpoint (768) {
+     text-align: left !important;
+    }
     .item {
       @include rem ('padding', 5, 0, 5, 0);
       .label {
@@ -29,12 +31,24 @@
         font-family: $font-heading-sb;
         color: $color-blue;
         @include rem ('font-size', 21);
+        @include breakpoint (992) {
+          @include rem ('font-size', 16);
+        }
+        @include breakpoint (768) {
+          @include rem ('font-size', 14);
+        }
       }
       .info {
         line-height: 1.4;
         font-family: $font-heading-sb;
         color: $color-text-default;
         @include rem ('font-size', 20);
+        @include breakpoint (992) {
+          @include rem ('font-size', 14);
+        }
+        @include breakpoint (768) {
+          @include rem ('font-size', 14);
+        }
       }
     }
   }
@@ -95,8 +109,8 @@
   @include rem ('max-width', 430);
   @include rem ('padding', 30, 0, 30, 0);
   margin: 0 auto;
-  @include breakpoint (900) {
-    @include rem ('max-width', 350);
+  @include breakpoint (992) {
+    @include rem ('max-width', 230);
     @include rem ('padding', 15, 0, 15, 0);
   }
 }

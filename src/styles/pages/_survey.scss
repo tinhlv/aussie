@@ -3,9 +3,21 @@
   @include breakpoint (992) {
     @include rem ('padding', 15, 0, 15, 0);
   }
+  
+  .btn-next {
+    // @include breakpoint (992) {
+    //   display: block;
+    //   margin: 0 auto;
+    // }
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 .heading-survey {
+  @include breakpoint (992) {
+    @include rem ('padding-top', 15);
+  }
   .hello {
     @include rem ('font-size', 37);
     line-height: 1.4;
@@ -53,6 +65,7 @@
 }
 
 .form-confirm {
+  text-align: center;
   .heading {
     @include rem ('font-size', 28);
     text-transform: uppercase;
@@ -64,7 +77,7 @@
     @include rem ('font-size', 16);
     line-height: 1.4;
     font-family: $font-heading-sb;
-    color: $color-grey;
+    color: $color-text-default;
     @include rem ('padding-bottom', 35);
   }
   .btn-group {
@@ -100,12 +113,13 @@
     line-height: 1.4;
     font-family: $font-heading-b;
     color: $color-text-default;
+    text-align: center;
   }
   .content {
     @include rem ('font-size', 16);
     line-height: 1.4;
     font-family: $font-heading-sb;
-    color:$color-grey;
+    color:$color-text-default;
     @include rem ('padding', 30, 0, 30, 0);
   }
   .content-bottom {
@@ -116,7 +130,7 @@
   }
   .styled-input-single {
     @include rem ('padding', 6, 0, 6, 40);
-    @include breakpoint (900) {
+    @include breakpoint (992) {
       @include rem ('padding', 6, 0, 6, 30);
       .text-small {
         @include rem ('font-size', 14);
@@ -138,6 +152,8 @@
   }
   .img-spec {
     @include rem ('padding', 45, 0, 45, 0);
+    display: block;
+    margin: 0 auto;
     @include breakpoint (768) {
       @include rem ('padding', 15, 0, 15, 0);
     }
