@@ -62,3 +62,13 @@
   @include rem('font-size', 12);
   line-height: 1.4;
 }
+
+
+.box-text-footer {
+  max-height: 120px;
+  overflow: auto;
+  margin-bottom: 2.5rem;
+}
+.design {
+  padding-bottom: 0;
+}
