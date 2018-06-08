@@ -134,7 +134,9 @@
     color: $color-blue;
   }
   &:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
-    width: 60%;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
     @include breakpoint (600) {
       width: 100%;
     }

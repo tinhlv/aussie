@@ -121,6 +121,7 @@
     font-family: $font-heading-sb;
     color:$color-text-default;
     @include rem ('padding', 30, 0, 30, 0);
+    text-align: center;
   }
   .content-bottom {
     @include rem ('font-size', 12);
