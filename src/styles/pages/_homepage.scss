@@ -18,6 +18,9 @@
     .description-banner-small {
       min-width: 100%;
     }
+    .description-banner-small {
+      display: none;
+    }
   }
 }
 
@@ -166,6 +169,12 @@
   .gift {
     background: url('../images/gift.png');
     @include rem ('padding-left', 80);
+    @include breakpoint (767) {
+      float: none !important;
+    }
+    @include breakpoint (600) {
+      display: none;
+    }
   }
   .item-slogan {
     @include rem ('padding-top', 13);

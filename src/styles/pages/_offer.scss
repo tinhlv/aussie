@@ -6,8 +6,11 @@
   @include breakpoint (1200) {
     @include rem ('font-size', 24);
   }
-  @include breakpoint (576) {
-    @include rem ('font-size', 16);
+  @include breakpoint (600) {
+    @include rem ('font-size', 25);
+  }
+  @include breakpoint (375) {
+    @include rem ('font-size', 22);
   }
   .price {
     @include rem ('font-size', 71);
@@ -75,6 +78,14 @@
     color: $color-blue;
     &:hover {
       text-decoration: underline;
+    }
+  }
+}
+
+.offer-page-02 {
+  @include breakpoint (600) {
+    .policy-content {
+      display: none;
     }
   }
 }

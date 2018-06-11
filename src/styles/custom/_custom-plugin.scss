@@ -1,0 +1,19 @@
+@media all and (max-width: 580px) {
+  .mm-menu {
+    max-width: 350px;
+    width: 60%;
+  }
+  .mm-wrapper_opening .mm-menu_position-right.mm-menu_opened~.mm-slideout {
+    -webkit-transform: translate(-60vw,0);
+    -ms-transform: translate(-60vw,0);
+    transform: translate(-60vw,0);
+    -webkit-transform: translate3d(-60vw,0,0);
+    transform: translate3d(-60vw,0,0);
+  }
+  html.mm-right.mm-opening .mm-slideout {
+    transform: translate(-350px, 0);
+  }
+  html.mm-opening .mm-slideout {
+    transform: translate(350px, 0); 
+  } 
+}
