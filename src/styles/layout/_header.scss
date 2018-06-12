@@ -28,9 +28,13 @@
   .active {
     border-top: 4px solid $color-primary;
   }
-  .logo-container {
-    .navbar-brand {
-      padding: 0;
+}
+
+.logo-container {
+  .navbar-brand {
+    padding: 0;
+    .img-logo {
+      @include rem ('max-height', 60);
     }
   }
 }
