@@ -81,11 +81,3 @@
     }
   }
 }
-
-.offer-page-02 {
-  @include breakpoint (600) {
-    .policy-content {
-      display: none;
-    }
-  }
-}
